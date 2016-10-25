@@ -236,7 +236,7 @@
               
                 
                 <a class="post-title-link" href="/2016/09/18/最近一段生活/" itemprop="url">
-                  最近一段生活
+                  永恒之源
                 </a>
               
             
@@ -279,7 +279,45 @@
       
         
           
-            <p>已经过完中秋了，一直想搭建一个自己的博客也弄好了。</p>
+            <p><strong>前言：</strong>已经过完中秋了，一直想搭建一个自己的博客也弄好了。记录一下搭建的过程，再闲聊一下最近的生活和YY一下未来。</p>
+<p>##Hexo搭建<br>博客是放在Github上，Github配置就不提了。简单说一下Hexo的配置。</p>
+<p>###静态博客配置</p>
+<blockquote>
+<p>安装Hexo需要Node.js和Git。在Mac里面安装Node.js最好的方式就是实用nvm去安装。</p>
+</blockquote>
+<p>####nvm安装</p>
+<ul>
+<li>可以去看一下nvm的Github主页<code>https://github.com/creationix/nvm</code><a href="https://github.com/creationix/nvm" target="_blank" rel="external">链接</a></li>
+</ul>
+<p>####Hexo安装<br>所需的库组件安装完成后，就可以傻瓜式地安装Hexo了。</p>
+<p>1.命令行输入<code>npm install -g hexo-cli</code></p>
+<p>2.hexo的构建 我安装的时候先<code>cd</code>到我想要安装的目标文件内，再去执行<code>hexo init</code>，然后执行<code>npm install</code>。</p>
+<blockquote>
+<p>Hexo的文件所代表的含义和功能会在下面的参考资料中给出链接</p>
+</blockquote>
+<p>3.hexo的样式配置 所有的配置信息都在<code>_config.yml</code>中</p>
+<p>###Github Page绑定<br>现在对于程序员来说<code>Github</code>应该不会陌生，如果你没听过，可以先Google一下。登录自己的Github帐号，创建一个固定样式<code>用户名.github.io</code>的仓库。例如：<code>KennyBest.github.io</code>。</p>
+<p>接下来打开<code>_config.yml</code>，找到对应的deploy这一项。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">type: git</div><div class="line">repo: 填入自己上一步创建的仓库的地址</div><div class="line">branch: master</div></pre></td></tr></table></figure>
+<blockquote>
+<p>这里Git的方式需要在命令行输入<code>npm install hexo-deployer-git --save</code>来安装所需的插件</p>
+</blockquote>
+<p>####参考</p>
+<blockquote>
+<p>吃水不忘挖井人</p>
+</blockquote>
+<p><a href="https://hexo.io/zh-cn/docs" target="_blank" rel="external">Hexo的中文文档</a></p>
+<p><a href="http://www.zhihu.com/question/24422335" target="_blank" rel="external">Hexo主题介绍</a></p>
+<p>##最近生活<br>  从年后加入可得到现在，一直在做可得眼镜这个项目。刚开始app还未上线，一边先熟悉项目逻辑，一边改一下测试提出的bug。大家都为上线卯足了劲，测试加班测app，开发加班完善功能。测啊测，测到加入购物车模块，炸了，测试测不下去，我也无从下手去改啊，每一步都是bug（原先写的哥们真tm的省事了）。跟同事商量后确定重写，此时业务逻辑还不怎么清楚，有点烦但是没办法，你得上啊。重写加入购物车模块算是正式融入到这个项目的开始吧。一边听测试讲业务逻辑，一边开发（谢谢测试同事的讲解）。这个模块写完功能实现了，但是有点乱（终于在前几天没事的时候把它重构了）。之后接着改购物车模块。</p>
+<p>  最近一段时间一直搞可得直播模块，推流／拉流／互动交互这些基本的功能实现，再加上可得项目本质<code>电商</code>特色（直播推动商品销售）这一功能。中间又搞了一段美瞳试戴开发。</p>
+<blockquote>
+<p>中间由于大家都懂的原因，心态出现了一次落潮</p>
+</blockquote>
+<p>##YY未来<br>未来到底是什么样子？我不知道，所以只能YY一下。我喜欢技术，但是还不是很纯粹（纯粹算是理想）。</p>
+<p>我希望自己未来是多姿多彩的，充满阳光。</p>
+<blockquote>
+<p>我喜欢C++，没有任何原因的喜欢。</p>
+</blockquote>
 
           
         
