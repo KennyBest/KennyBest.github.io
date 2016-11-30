@@ -98,7 +98,7 @@ tags: JSONSeriaiztion
 第一次尝试译文，如果有错误谢谢指正。这里面的例子有的是我自己通过XCTest测试的. KennyBest!
 
 译文地址：https://developer.apple.com/swift/blog/?id=">
-<meta property="og:updated_time" content="2016-11-30T17:11:20.000Z">
+<meta property="og:updated_time" content="2016-11-30T17:16:22.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="陌洛凉">
 <meta name="twitter:description" content="layout: ‘[post]’title: Working with JSON in Swiftdate: 2016-11-29 20:52:17
@@ -294,6 +294,7 @@ tags: JSONSeriaiztion
 </blockquote>
 <p>译文地址：<a href="https://developer.apple.com/swift/blog/?id=37" target="_blank" rel="external">https://developer.apple.com/swift/blog/?id=37</a>  </p>
 <p>如果你的APP和web程序进行交互，那么从服务器返回的数据大都是JSON格式。你可以使用<code>Foundation</code>框架中的<code>JSONSerialization</code>类将JSON数据转化为<code>Swift</code>类型数据，例如<code>Dictionary</code>、<code>Array</code>、<code>String</code>、<code>Number</code>、Bool。然而，你并不能确定从服务器获取到的<code>JSON</code>值或者结构，正确地转化模型对象变成难题。这篇博文正是描述一些当你使用<code>JSON</code>交互时可采用的途径。  </p>
+<p>&lt;! – more –&gt;</p>
 <h2 id="从JSON中取数据"><a href="#从JSON中取数据" class="headerlink" title="从JSON中取数据"></a>从JSON中取数据</h2><p><code>JSONSerializtion</code>类提供了<code>jsonObject(with:options:)</code>类方法返回数据类型为<code>Any</code>数据，如果当数据不能被解析时抛出一个错误。 </p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">func testExample() &#123;</div><div class="line"></div><div class="line">    let <span class="string">dictionary:</span> [<span class="string">String :</span> String] = [ <span class="string">"name"</span> : <span class="string">"lilingjie"</span> ]</div><div class="line">    let <span class="string">data:</span> Data = <span class="keyword">try</span>! JSONSerialization.data(<span class="string">withJSONObject:</span> dictionary, <span class="string">options:</span> .prettyPrinted)</div><div class="line">    </div><div class="line">    let retDictionary = <span class="keyword">try</span>? JSONSerialization.jsonObject(with: data, <span class="string">options:</span> .allowFragments) <span class="keyword">as</span>! [<span class="string">String :</span> String]</div><div class="line">    XCTAssertEqual(dictionary, retDictionary!, <span class="string">"JSONSerialization convert JSON to Swift data type"</span>)</div><div class="line">&#125;</div></pre></td></tr></table></figure>  
 <p>尽管有效的<code>JSON</code>可能只包含单个数据，从服务器响应的数据通常以数组或者字典作为最外层模型进行编码。你可以在<code>if</code>或<code>guard</code>语法中使用可选绑定和<code>as?</code>或<code>as!</code>类型指定操作符以常量的形式取出来已知类型的数据。通常指定为<code>[String : Any]</code>来从<code>JSON</code>数据中获取字典<code>Dictionary</code>,指定为<code>[Any]</code>获得数组<code>Array</code>（或者更明确元素类型的数组，像<code>[String]</code>）。 借助下标语法存取<code>Subscript</code>和枚举元素类型可选绑定后你可以通过key值摘取字典数据或者通过下标取得数组数据。  </p>
