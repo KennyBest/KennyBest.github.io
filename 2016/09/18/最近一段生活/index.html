@@ -311,7 +311,7 @@ nvm安装
 <p>3.hexo的样式配置 所有的配置信息都在<code>_config.yml</code>中</p>
 <h3 id="Github-Page绑定"><a href="#Github-Page绑定" class="headerlink" title="Github Page绑定"></a>Github Page绑定</h3><p>现在对于程序员来说<code>Github</code>应该不会陌生，如果你没听过，可以先Google一下。登录自己的Github帐号，创建一个固定样式<code>用户名.github.io</code>的仓库。例如：<code>KennyBest.github.io</code>。</p>
 <p>接下来打开<code>_config.yml</code>，找到对应的deploy这一项。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">type: git</div><div class="line">repo: 填入自己上一步创建的仓库的地址</div><div class="line">branch: master</div></pre></td></tr></table></figure>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">type:</span> git</div><div class="line"><span class="symbol">repo:</span> 填入自己上一步创建的仓库的地址</div><div class="line"><span class="symbol">branch:</span> master</div></pre></td></tr></table></figure>
 <blockquote>
 <p>这里Git的方式需要在命令行输入<code>npm install hexo-deployer-git --save</code>来安装所需的插件</p>
 </blockquote>
