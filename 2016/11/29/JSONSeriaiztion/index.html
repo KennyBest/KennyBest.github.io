@@ -84,12 +84,28 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="layout: ‘[post]’title: Working with JSON in Swiftdate: 2016-11-29 20:52:17
+tags: JSONSeriaiztion
+第一次尝试译文，如果有错误谢谢指正。这里面的例子有的是我自己通过XCTest测试的. KennyBest!
+
+译文地址：https://developer.apple.com/swift/blog/?id=">
+<meta property="og:type" content="article">
 <meta property="og:title" content="陌洛凉">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/11/29/JSONSeriaiztion/index.html">
 <meta property="og:site_name" content="陌洛凉">
+<meta property="og:description" content="layout: ‘[post]’title: Working with JSON in Swiftdate: 2016-11-29 20:52:17
+tags: JSONSeriaiztion
+第一次尝试译文，如果有错误谢谢指正。这里面的例子有的是我自己通过XCTest测试的. KennyBest!
+
+译文地址：https://developer.apple.com/swift/blog/?id=">
+<meta property="og:updated_time" content="2016-11-30T17:16:22.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="陌洛凉">
+<meta name="twitter:description" content="layout: ‘[post]’title: Working with JSON in Swiftdate: 2016-11-29 20:52:17
+tags: JSONSeriaiztion
+第一次尝试译文，如果有错误谢谢指正。这里面的例子有的是我自己通过XCTest测试的. KennyBest!
+
+译文地址：https://developer.apple.com/swift/blog/?id=">
 
 
 
@@ -110,9 +126,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/29/JSONSeriaiztion/"/>
 
-  <title> 陌洛凉 </title>
+  <title>  | 陌洛凉 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -133,9 +149,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-right 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -212,9 +226,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -235,9 +249,6 @@
             
               
                 
-                <a class="post-title-link" href="/2016/11/29/JSONSeriaiztion/" itemprop="url">
-                  未命名
-                </a>
               
             
           </h1>
@@ -277,9 +288,7 @@
       
 
       
-        
-          
-            <p>layout: ‘[post]’<br>title: Working with JSON in Swift<br>date: 2016-11-29 20:52:17</p>
+        <p>layout: ‘[post]’<br>title: Working with JSON in Swift<br>date: 2016-11-29 20:52:17</p>
 <h2 id="tags-JSONSeriaiztion"><a href="#tags-JSONSeriaiztion" class="headerlink" title="tags: JSONSeriaiztion"></a>tags: JSONSeriaiztion</h2><blockquote>
 <p>第一次尝试译文，如果有错误谢谢指正。这里面的例子有的是我自己通过XCTest测试的. KennyBest!</p>
 </blockquote>
@@ -309,142 +318,36 @@
 <p>用这种方式分离管理为获取餐馆数据提供了便利，即使具体实现发生改变。</p>
 <h2 id="映射中的映射"><a href="#映射中的映射" class="headerlink" title="映射中的映射"></a>映射中的映射</h2><p>在不同的系统中对相同数据的呈现方式转换对于写软件来说是单调、必要的任务。<br>因为这些呈现方式的结构十分相似，这可能会创建高层级抽象过程去自动在不同呈现间映射。举例来说，一个类可能会为了自动初始化一个模型，利用<code>Swift</code>映射API去定义一种<code>JSON</code>key值和类里面的属性名称之间的映射关系。例如<code>Mirror</code>。<br>然而，我们会发现这些抽象过程性质在<code>Swift</code>语言特性的常规使用场景上并没有提供客观的收益，反而在调试问题和处理额外情景上带来了更多的困扰。通过上面的例子，构造器不但从<code>JSON</code>数据中获取和映射数据，还构造了混合数据类型和执行范围有效性验证。<br>为了实现这些所有的功能，基于映射途径可能会有较大长度。  对于我们的APP来说，评估效率时应该考虑这些。一些重复代码的消耗比使用错误的映射过程更有意义。</p>
 
-          
-        
       
     </div>
 
     <div>
       
+        
+
+      
     </div>
 
     <div>
       
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/23/TDD-XCTest入门篇/" itemprop="url">
-                  TDD-XCTest入门篇
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-23T22:21:45+08:00" content="2016-11-23">
-              2016-11-23
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>如果您喜欢，就请我喝一瓶百事！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechat-reward-image.png" alt="李令洁 WeChat Pay"/>
+          <p>微信打赏</p>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
       
-      
-
-      
-        
-          
-            <h2 id="它是什么"><a href="#它是什么" class="headerlink" title="它是什么"></a>它是什么</h2><p>TDD测试驱动开发，全称为Test Driven Development。XCode自带的单元测试工具</p>
-<h2 id="它有什么好处"><a href="#它有什么好处" class="headerlink" title="它有什么好处"></a>它有什么好处</h2><ul>
-<li>测试为了线上少出错，发现bug及时修改</li>
-<li>不必每次改完一个很小的问题就的重新跑一遍程序</li>
-<li>测试为了更好地优化自己代码结构逻辑</li>
-</ul>
-<h2 id="我怎么用它"><a href="#我怎么用它" class="headerlink" title="我怎么用它"></a>我怎么用它</h2><h3 id="XCT基础配置"><a href="#XCT基础配置" class="headerlink" title="XCT基础配置"></a>XCT基础配置</h3><p><code>XCTestCase</code>是<code>XCTest</code>的具体的子类，开发者可以通过重写此类来测试自己的工程。一个测试类可以有多个测试方法，并且对于所有的测试方法支持创建和清空操作，类层面上的测试也一样。<br>如何定义一个测试类： </p>
-<ul>
-<li>创建一个<code>XCTestCase</code>的子类，并且以<code>Tests</code>结尾  </li>
-<li>实现里面的<code>-test</code>方法</li>
-<li>可以定义多个储存当前测试状态的对象或者属性 （可选） </li>
-<li>通过初始化<code>-setUp</code>来初始化状态  (可选) </li>
-<li>通过重写<code>-tearDown</code>在测试完之后清除 (可选)   </li>
-</ul>
-<p>测试方法是对象方法 遵守以下约定:  </p>
-<ul>
-<li>没有参数  </li>
-<li>没有返回值  </li>
-<li>以test作为方法名前缀</li>
-</ul>
-<h3 id="XCT基础使用"><a href="#XCT基础使用" class="headerlink" title="XCT基础使用"></a>XCT基础使用</h3><p>测试方法大多都是通过断言来判定是否正确。</p>
-<pre><code>func testExample() {
-
-     XCTAssert(f1 + f2 == 5.0, &quot;simple test example&quot;)
-
- }
-</code></pre><p>通过<code>command+R</code>或通过<code>Produnt-&gt; Test</code>来运行测试用例，将会得到以下结果，并且在测试方法的左侧将会有一个菱形标志（正确则显示为绿色，错误则显示为红色）。  </p>
-<p>在写测试用例的时候，应该考虑到代码的重用性，项目里面的测试用例都应该有一个共同的父类。父类可以写一些公用的辅助方法以及一些属性。<br>测试方法命名采用<code>test+要测试的方法和类名</code>，这样可以很明确地看出来测试用例的目的。每一个测试用例类都应该对应一个项目工程实际代码类，通常采用<code>类名+Tests</code>命名。禁用一个测试用例的话，只需在方法名之前添加<code>DISABLED</code>。</p>
-<blockquote>
-<p>这里其实只要方法不是以<code>test</code>开头，XCTest就会在运行时跳过这个方法   </p>
-</blockquote>
-<p>正在尝试怎么结合实际项目提升开发效率，有了进展在更新。 </p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p> <a href="http://yulingtianxia.com/blog/2014/04/28/iosdan-yuan-ce-shi-xctest/" target="_blank" rel="external">玉令天下的博客</a><br> <a href="https://objccn.io/issue-15-2/" target="_blank" rel="external">XCTest测试实战</a><br> <a href="https://objccn.io/issue-1-3/" target="_blank" rel="external">测试ViewController</a></p>
-
-          
-        
       
     </div>
+  </div>
 
-    <div>
-      
-    </div>
 
-    <div>
       
     </div>
 
@@ -452,258 +355,32 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/11/23/TDD-XCTest入门篇/" rel="next" title="TDD-XCTest入门篇">
+                <i class="fa fa-chevron-left"></i> TDD-XCTest入门篇
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/11/09/Effective Objective-C 笔记/" itemprop="url">
-                  Effective Objective-C 笔记
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-09T22:01:09+08:00" content="2016-11-09">
-              2016-11-09
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p><strong>前言：</strong>再次读，一样的内容，不一样的感悟。</p>
-<h3 id="第一章-熟悉Objective-C"><a href="#第一章-熟悉Objective-C" class="headerlink" title="第一章 熟悉Objective-C"></a>第一章 熟悉Objective-C</h3><h4 id="在类的头文件中尽量少引进其它头文件"><a href="#在类的头文件中尽量少引进其它头文件" class="headerlink" title="在类的头文件中尽量少引进其它头文件"></a>在类的头文件中尽量少引进其它头文件</h4><p>在类的头文件中如果引入其它头文件，那么当前类的头文件被引入时之前引入的头文件也会被同时引入，这将大大延长项目的编译时间，并且能降低类之间的耦合。</p>
-<p>优化： 如果当前头文件涉及到其它类时仅仅只声明时，可以使用<code>@class</code>声明欲引用的类，在<code>.m</code>文件中引入类的头文件（向前声明）。对协议而言，尽量将遵守协议的声明移至分类中，再不行，就把协议放在单独的文件中在引入。</p>
-<h4 id="多用字面量语法（语法糖）"><a href="#多用字面量语法（语法糖）" class="headerlink" title="多用字面量语法（语法糖）"></a>多用字面量语法（语法糖）</h4><p>字面量语法多用于<code>Foundation</code>框架中的类。使用字面量语法可以有效缩减源代码长度，更加简洁易读。</p>
-<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">NSString *string = @<span class="string">"kenny best"</span><span class="comment">;</span></div><div class="line">NSArray *array = @[@<span class="string">"kenny"</span>, @<span class="string">"best"</span>]<span class="comment">;</span></div><div class="line">NSDictionary *<span class="keyword">dictionary </span>= @&#123;@<span class="string">"kenny"</span> : @<span class="string">"best"</span>&#125;<span class="comment">;</span></div><div class="line">NSMutableArray *mutableArray = @[@<span class="string">"kenny"</span>, @<span class="string">"best"</span>].mutableCopy<span class="comment">;</span></div><div class="line">NSMutableDictionary *mutableDic = @&#123;@<span class="string">"kenny"</span> : @<span class="string">"best"</span>&#125;.mutableCopy<span class="comment">;</span></div><div class="line">NSNumber *number = @<span class="number">1</span><span class="comment">; // @1.25f @YES @'K'</span></div></pre></td></tr></table></figure>
-<blockquote>
-<p>使用字面量创建数组、字典时，需要断定值的非空性，否则会抛出异常。使用语法糖创建的字典、数组时应该通过下标操作元素。</p>
-</blockquote>
-<h4 id="多用类型常量-少用-define"><a href="#多用类型常量-少用-define" class="headerlink" title="多用类型常量 少用#define"></a>多用类型常量 少用#define</h4><p>常量的定义尽可能的避免<code>#define</code>，用<code>#define</code>定义的内容是在编译前进行内容替换。<br>如果定义的常量尽在当前编译单元（实现文件）内有效，那么在此常量前加<code>k</code>标明。如下：</p>
-<p><code>static const NSString *name = @&quot;kenny best&quot;;</code></p>
-<p>如果定义的常量在多个编译单元时，那么这个常量将放在全局符号表中，使用 <code>extern</code>去声明，并在对应的实现文件中定义值，通常还会以类名作为前缀用于区分。</p>
-<p>在<code>.h</code>中<code>extern cosnt NSString *name;</code>声明， </p>
-<p>在<code>.m</code>中<code>const NSString *name = @&quot;kenny best&quot;;</code>定义</p>
-<blockquote>
-<p>类型常量声明的时候已经确定类型，并且添加限制，可以借助编译器来确保常量正确。</p>
-</blockquote>
-<h4 id="使用枚举表示状态、选项"><a href="#使用枚举表示状态、选项" class="headerlink" title="使用枚举表示状态、选项"></a>使用枚举表示状态、选项</h4>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/09/18/最近一段生活/" itemprop="url">
-                  永恒之源
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-18T21:12:57+08:00" content="2016-09-18">
-              2016-09-18
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>前言：</strong>已经过完中秋了，一直想搭建一个自己的博客也弄好了。记录一下搭建的过程，再闲聊一下最近的生活和YY一下未来。</p>
-<h2 id="Hexo搭建"><a href="#Hexo搭建" class="headerlink" title="Hexo搭建"></a>Hexo搭建</h2><p>博客是放在Github上，Github配置就不提了。简单说一下Hexo的配置。</p>
-<h3 id="静态博客配置"><a href="#静态博客配置" class="headerlink" title="静态博客配置"></a>静态博客配置</h3><blockquote>
-<p>安装Hexo需要Node.js和Git。在Mac里面安装Node.js最好的方式就是实用nvm去安装。</p>
-</blockquote>
-<h4 id="nvm安装"><a href="#nvm安装" class="headerlink" title="nvm安装"></a>nvm安装</h4><ul>
-<li>可以去看一下nvm的Github主页<code>https://github.com/creationix/nvm</code><a href="https://github.com/creationix/nvm" target="_blank" rel="external">链接</a></li>
-</ul>
-<h4 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h4><p>所需的库组件安装完成后，就可以傻瓜式地安装Hexo了。</p>
-<p>1.命令行输入<code>npm install -g hexo-cli</code></p>
-<p>2.hexo的构建 我安装的时候先<code>cd</code>到我想要安装的目标文件内，再去执行<code>hexo init</code>，然后执行<code>npm install</code>。</p>
-<blockquote>
-<p>Hexo的文件所代表的含义和功能会在下面的参考资料中给出链接</p>
-</blockquote>
-<p>3.hexo的样式配置 所有的配置信息都在<code>_config.yml</code>中</p>
-<h3 id="Github-Page绑定"><a href="#Github-Page绑定" class="headerlink" title="Github Page绑定"></a>Github Page绑定</h3><p>现在对于程序员来说<code>Github</code>应该不会陌生，如果你没听过，可以先Google一下。登录自己的Github帐号，创建一个固定样式<code>用户名.github.io</code>的仓库。例如：<code>KennyBest.github.io</code>。</p>
-<p>接下来打开<code>_config.yml</code>，找到对应的deploy这一项。</p>
-<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">type:</span> git</div><div class="line"><span class="symbol">repo:</span> 填入自己上一步创建的仓库的地址</div><div class="line"><span class="symbol">branch:</span> master</div></pre></td></tr></table></figure>
-<blockquote>
-<p>这里Git的方式需要在命令行输入<code>npm install hexo-deployer-git --save</code>来安装所需的插件</p>
-</blockquote>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><blockquote>
-<p>吃水不忘挖井人</p>
-</blockquote>
-<p><a href="https://hexo.io/zh-cn/docs" target="_blank" rel="external">Hexo的中文文档</a></p>
-<p><a href="http://www.zhihu.com/question/24422335" target="_blank" rel="external">Hexo主题介绍</a></p>
-<h2 id="最近生活"><a href="#最近生活" class="headerlink" title="最近生活"></a>最近生活</h2><p>  从年后加入可得(谢谢我原先同事的内推)到现在，一直在做可得眼镜这个项目。刚开始app还未上线，一边先熟悉项目逻辑，一边改一下测试提出的bug。大家都为上线卯足了劲，测试加班测app，开发加班完善功能。测啊测，测到加入购物车模块，炸了，测试测不下去，我也无从下手去改啊，每一步都是bug（原先写的哥们真tm的省事了）。跟同事商量后确定重写，此时业务逻辑还不怎么清楚，有点烦但是没办法，你得上啊。重写加入购物车模块算是正式融入到这个项目的开始吧。一边听测试讲业务逻辑，一边开发（谢谢测试同事的讲解）。这个模块写完功能实现了，但是有点乱（终于在前几天没事的时候把它重构了）。之后接着改购物车模块。</p>
-<p>  最近一段时间一直搞可得直播模块，推流／拉流／互动交互这些基本的功能实现，再加上可得项目本质<code>电商</code>特色（直播推动商品销售）这一功能。中间又搞了一段美瞳试戴开发。</p>
-<blockquote>
-<p>中间由于大家都懂的原因，心态出现了一次落潮</p>
-</blockquote>
-<h2 id="YY未来"><a href="#YY未来" class="headerlink" title="YY未来"></a>YY未来</h2><p>未来到底是什么样子？我不知道，所以只能YY一下。我喜欢技术，但是还不是很纯粹（纯粹算是理想）。</p>
-<p>我希望自己未来是多姿多彩的，充满阳光。</p>
-<p>Fighting!</p>
-<blockquote>
-<p>我喜欢C++，没有任何原因的喜欢。</p>
-</blockquote>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -711,6 +388,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -730,8 +411,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -794,6 +484,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tags-JSONSeriaiztion"><span class="nav-number">1.</span> <span class="nav-text">tags: JSONSeriaiztion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#从JSON中取数据"><span class="nav-number">2.</span> <span class="nav-text">从JSON中取数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#利用从JSON获取的数据创建Model"><span class="nav-number">3.</span> <span class="nav-text">利用从JSON获取的数据创建Model</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#写一个可选的JSON构造函数"><span class="nav-number">3.1.</span> <span class="nav-text">写一个可选的JSON构造函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写一个带错误管理的JSON构造函数"><span class="nav-number">3.2.</span> <span class="nav-text">写一个带错误管理的JSON构造函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写获取数据源的类方法"><span class="nav-number">3.3.</span> <span class="nav-text">写获取数据源的类方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#映射中的映射"><span class="nav-number">4.</span> <span class="nav-text">映射中的映射</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -890,6 +591,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
