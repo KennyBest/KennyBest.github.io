@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Objective-C," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,22 +84,36 @@
 
 
 
-<meta name="description" content="前言：再次读，一样的内容，不一样的感悟。
-第一章 熟悉Objective-C在类的头文件中尽量少引进其它头文件在类的头文件中如果引入其它头文件，那么当前类的头文件被引入时之前引入的头文件也会被同时引入，这将大大延长项目的编译时间，并且能降低类之间的耦合。
-优化： 如果当前头文件涉及到其它类时仅仅只声明时，可以使用@class声明欲引用的类，在.m文件中引入类的头文件（向前声明）。对协议而言，尽量将">
+<meta name="description" content="这次是加入可得后首次开发部集体旅游，目的地就是位于安徽的徽杭古道。  
+风景徽杭古道之旅主要以山道徒步为主。这次风景方面感觉一般，观山我个人认为主要是两点一是山险二是山奇，古道显然没有这两点。但是山里的空气和天还是蛮不错的，还有这次是开发部集体出去，对于一年来几乎没出去过的我来说应该也是一次不错体验。   
+  
+  
+  
+
+感悟沟通在可得这么长时间除了工作上的交流之外，跟同事交流并不多。一是自">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Effective Objective-C 笔记">
-<meta property="og:url" content="http://yoursite.com/2016/11/09/Effective Objective-C 笔记/index.html">
+<meta property="og:title" content="记徽杭古道之行">
+<meta property="og:url" content="http://yoursite.com/2016/12/04/记徽杭古道之行/index.html">
 <meta property="og:site_name" content="陌洛凉">
-<meta property="og:description" content="前言：再次读，一样的内容，不一样的感悟。
-第一章 熟悉Objective-C在类的头文件中尽量少引进其它头文件在类的头文件中如果引入其它头文件，那么当前类的头文件被引入时之前引入的头文件也会被同时引入，这将大大延长项目的编译时间，并且能降低类之间的耦合。
-优化： 如果当前头文件涉及到其它类时仅仅只声明时，可以使用@class声明欲引用的类，在.m文件中引入类的头文件（向前声明）。对协议而言，尽量将">
-<meta property="og:updated_time" content="2016-11-09T14:56:30.000Z">
+<meta property="og:description" content="这次是加入可得后首次开发部集体旅游，目的地就是位于安徽的徽杭古道。  
+风景徽杭古道之旅主要以山道徒步为主。这次风景方面感觉一般，观山我个人认为主要是两点一是山险二是山奇，古道显然没有这两点。但是山里的空气和天还是蛮不错的，还有这次是开发部集体出去，对于一年来几乎没出去过的我来说应该也是一次不错体验。   
+  
+  
+  
+
+感悟沟通在可得这么长时间除了工作上的交流之外，跟同事交流并不多。一是自">
+<meta property="og:image" content="http://yoursite.com/2016/12/04/记徽杭古道之行/kedegroup.jpeg">
+<meta property="og:updated_time" content="2016-12-04T14:22:25.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Effective Objective-C 笔记">
-<meta name="twitter:description" content="前言：再次读，一样的内容，不一样的感悟。
-第一章 熟悉Objective-C在类的头文件中尽量少引进其它头文件在类的头文件中如果引入其它头文件，那么当前类的头文件被引入时之前引入的头文件也会被同时引入，这将大大延长项目的编译时间，并且能降低类之间的耦合。
-优化： 如果当前头文件涉及到其它类时仅仅只声明时，可以使用@class声明欲引用的类，在.m文件中引入类的头文件（向前声明）。对协议而言，尽量将">
+<meta name="twitter:title" content="记徽杭古道之行">
+<meta name="twitter:description" content="这次是加入可得后首次开发部集体旅游，目的地就是位于安徽的徽杭古道。  
+风景徽杭古道之旅主要以山道徒步为主。这次风景方面感觉一般，观山我个人认为主要是两点一是山险二是山奇，古道显然没有这两点。但是山里的空气和天还是蛮不错的，还有这次是开发部集体出去，对于一年来几乎没出去过的我来说应该也是一次不错体验。   
+  
+  
+  
+
+感悟沟通在可得这么长时间除了工作上的交流之外，跟同事交流并不多。一是自">
+<meta name="twitter:image" content="http://yoursite.com/2016/12/04/记徽杭古道之行/kedegroup.jpeg">
 
 
 
@@ -120,9 +134,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/11/09/Effective Objective-C 笔记/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/12/04/记徽杭古道之行/"/>
 
-  <title> Effective Objective-C 笔记 | 陌洛凉 </title>
+  <title> 记徽杭古道之行 | 陌洛凉 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -242,7 +256,7 @@
             
             
               
-                Effective Objective-C 笔记
+                记徽杭古道之行
               
             
           </h1>
@@ -254,8 +268,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-09T22:01:09+08:00" content="2016-11-09">
-              2016-11-09
+            <time itemprop="dateCreated" datetime="2016-12-04T20:17:51+08:00" content="2016-12-04">
+              2016-12-04
             </time>
           </span>
 
@@ -282,23 +296,22 @@
       
 
       
-        <p><strong>前言：</strong>再次读，一样的内容，不一样的感悟。</p>
-<h3 id="第一章-熟悉Objective-C"><a href="#第一章-熟悉Objective-C" class="headerlink" title="第一章 熟悉Objective-C"></a>第一章 熟悉Objective-C</h3><h4 id="在类的头文件中尽量少引进其它头文件"><a href="#在类的头文件中尽量少引进其它头文件" class="headerlink" title="在类的头文件中尽量少引进其它头文件"></a>在类的头文件中尽量少引进其它头文件</h4><p>在类的头文件中如果引入其它头文件，那么当前类的头文件被引入时之前引入的头文件也会被同时引入，这将大大延长项目的编译时间，并且能降低类之间的耦合。</p>
-<p>优化： 如果当前头文件涉及到其它类时仅仅只声明时，可以使用<code>@class</code>声明欲引用的类，在<code>.m</code>文件中引入类的头文件（向前声明）。对协议而言，尽量将遵守协议的声明移至分类中，再不行，就把协议放在单独的文件中在引入。</p>
-<h4 id="多用字面量语法（语法糖）"><a href="#多用字面量语法（语法糖）" class="headerlink" title="多用字面量语法（语法糖）"></a>多用字面量语法（语法糖）</h4><p>字面量语法多用于<code>Foundation</code>框架中的类。使用字面量语法可以有效缩减源代码长度，更加简洁易读。</p>
-<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">NSString *string = @<span class="string">"kenny best"</span><span class="comment">;</span></div><div class="line">NSArray *array = @[@<span class="string">"kenny"</span>, @<span class="string">"best"</span>]<span class="comment">;</span></div><div class="line">NSDictionary *<span class="keyword">dictionary </span>= @&#123;@<span class="string">"kenny"</span> : @<span class="string">"best"</span>&#125;<span class="comment">;</span></div><div class="line">NSMutableArray *mutableArray = @[@<span class="string">"kenny"</span>, @<span class="string">"best"</span>].mutableCopy<span class="comment">;</span></div><div class="line">NSMutableDictionary *mutableDic = @&#123;@<span class="string">"kenny"</span> : @<span class="string">"best"</span>&#125;.mutableCopy<span class="comment">;</span></div><div class="line">NSNumber *number = @<span class="number">1</span><span class="comment">; // @1.25f @YES @'K'</span></div></pre></td></tr></table></figure>
-<blockquote>
-<p>使用字面量创建数组、字典时，需要断定值的非空性，否则会抛出异常。使用语法糖创建的字典、数组时应该通过下标操作元素。</p>
+        <p>这次是加入可得后首次开发部集体旅游，目的地就是位于安徽的徽杭古道。  </p>
+<h2 id="风景"><a href="#风景" class="headerlink" title="风景"></a>风景</h2><p>徽杭古道之旅主要以山道徒步为主。这次风景方面感觉一般，观山我个人认为主要是两点一是山险二是山奇，古道显然没有这两点。但是山里的空气和天还是蛮不错的，还有这次是开发部集体出去，对于一年来几乎没出去过的我来说应该也是一次不错体验。<br><img src="/2016/12/04/记徽杭古道之行/kedegroup.jpeg" alt="可得开发部" title="可得开发部">   </p>
+  
+  
+  
+
+<h2 id="感悟"><a href="#感悟" class="headerlink" title="感悟"></a>感悟</h2><h3 id="沟通"><a href="#沟通" class="headerlink" title="沟通"></a>沟通</h3><p>在可得这么长时间除了工作上的交流之外，跟同事交流并不多。一是自己话比较少，可聊的话题少；二是时间少，大家都有自己的规划，没有一个很好的一个契合点。这次出去玩也不能说一下子就提升了同事之间熟悉度，最起码可以大家有了闲聊的机会。这次出去玩，明白了跟别人沟通你需要主动，既然想让别人认识自己，那就要主动去给别人介绍，别人没有那个时间去猜你内心的想法，在工作上也是如此。 </p>
+<h3 id="幸福度"><a href="#幸福度" class="headerlink" title="幸福度"></a>幸福度</h3><blockquote>
+<p>我这里说的幸福度是幸福的标准。每个人可能都不一样，这里仅限自己。</p>
 </blockquote>
-<h4 id="多用类型常量-少用-define"><a href="#多用类型常量-少用-define" class="headerlink" title="多用类型常量 少用#define"></a>多用类型常量 少用#define</h4><p>常量的定义尽可能的避免<code>#define</code>，用<code>#define</code>定义的内容是在编译前进行内容替换。<br>如果定义的常量尽在当前编译单元（实现文件）内有效，那么在此常量前加<code>k</code>标明。如下：</p>
-<p><code>static const NSString *name = @&quot;kenny best&quot;;</code></p>
-<p>如果定义的常量在多个编译单元时，那么这个常量将放在全局符号表中，使用 <code>extern</code>去声明，并在对应的实现文件中定义值，通常还会以类名作为前缀用于区分。</p>
-<p>在<code>.h</code>中<code>extern cosnt NSString *name;</code>声明， </p>
-<p>在<code>.m</code>中<code>const NSString *name = @&quot;kenny best&quot;;</code>定义</p>
+<p>晚上我们是在一个农家院过夜，我跟阿凯还有月阳三个人住到一个房间，我们三个是老乡(都是河南的)，再一块用河南话交流挺爽的。<br>我想到这一点，是因为晚上睡觉前我们3个闲聊，阿凯已经结婚了，就说到彩礼、房子。阿凯说他结婚彩礼花的钱不多，他媳妇也特别体贴，再加上现在自己也有一个小孩，就觉得自己特别幸福。他说其实他的幸福度很低，这里我理解的是他对物质要求很低，老婆疼自己，孩子也健康成长，自己在上海工作，特别好。<br>我现在的幸福度比对标准好像很物质化，幸福跟物质肯定有关，但不应该只去判定你现在拥有的物质方面的财富。如果一个人说只追求精神幸福，我觉得这个人就是他妈瞎扯。  </p>
+<h3 id="瞎扯"><a href="#瞎扯" class="headerlink" title="瞎扯"></a>瞎扯</h3><p>我现在的室友是我九年的朋友了，他的幸福点我现在就不太懂。就这个疑惑闲聊过好多次，他一直说他知道自己想要的，他现在的做事方式跟我的有很大差异，只要是朝着自己梦想奔跑就行。他说我如果不改变自己现有的习惯，我的发展周期可能会变长，他自己又何尝不是。<br>老冀，很有意思的一个朋友。他有意思的点是看得清自己。一个人如果连自己就不能正确地评估的话，估计也发展不到哪里去。<br>这段想说的就是自己想要的生活靠自己争取，条件自己去创造，困难自己去解决。</p>
 <blockquote>
-<p>类型常量声明的时候已经确定类型，并且添加限制，可以借助编译器来确保常量正确。</p>
+<p>文笔需要加强，思绪有点乱。</p>
 </blockquote>
-<h4 id="使用枚举表示状态、选项"><a href="#使用枚举表示状态、选项" class="headerlink" title="使用枚举表示状态、选项"></a>使用枚举表示状态、选项</h4>
+
       
     </div>
 
@@ -318,28 +331,18 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/Objective-C/" rel="tag">#Objective-C</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/09/18/最近一段生活/" rel="next" title="永恒之源">
-                <i class="fa fa-chevron-left"></i> 永恒之源
+              <a href="/2016/12/01/在Swift中使用JSON/" rel="next" title="在Swift中使用JSON">
+                <i class="fa fa-chevron-left"></i> 在Swift中使用JSON
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/23/TDD-XCTest入门篇/" rel="prev" title="TDD-XCTest入门篇">
-                TDD-XCTest入门篇 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -466,7 +469,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一章-熟悉Objective-C"><span class="nav-number">1.</span> <span class="nav-text">第一章 熟悉Objective-C</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在类的头文件中尽量少引进其它头文件"><span class="nav-number">1.1.</span> <span class="nav-text">在类的头文件中尽量少引进其它头文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多用字面量语法（语法糖）"><span class="nav-number">1.2.</span> <span class="nav-text">多用字面量语法（语法糖）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多用类型常量-少用-define"><span class="nav-number">1.3.</span> <span class="nav-text">多用类型常量 少用#define</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用枚举表示状态、选项"><span class="nav-number">1.4.</span> <span class="nav-text">使用枚举表示状态、选项</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#风景"><span class="nav-number">1.</span> <span class="nav-text">风景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#感悟"><span class="nav-number">2.</span> <span class="nav-text">感悟</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#沟通"><span class="nav-number">2.1.</span> <span class="nav-text">沟通</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#幸福度"><span class="nav-number">2.2.</span> <span class="nav-text">幸福度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#瞎扯"><span class="nav-number">2.3.</span> <span class="nav-text">瞎扯</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
