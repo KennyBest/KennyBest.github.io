@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="XCTest TDD," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,34 +84,22 @@
 
 
 
-<meta name="description" content="它是什么TDD测试驱动开发，全称为Test Driven Development。XCode自带的单元测试工具
-它有什么好处
-测试为了线上少出错，发现bug及时修改
-不必每次改完一个很小的问题就的重新跑一遍程序
-测试为了更好地优化自己代码结构逻辑
+<meta name="description" content="一个事件总是沿着明确的路径传输直到它被分发给一个对象可以处理它。首先UIApplication的单例从事件处理队列的头部拿到，并为了处理开始分配。一般，它将事件分配给UIAppldelegate的keyWindow对象，由这个对象传递给一个已经初始过的的对象处理它。  
 
-我怎么用它XCT基础配置XCTestCase是XCTest的具体的子类，开发者可以通过重写此类来测试自己的工程。一个测试类可以有多个测试方法，并且对于">
+触摸事件 对于触摸事件来说，window对象首先尝试将事件分发给产生这个事件的视图，这个视图被称为hit-testview，寻">
 <meta property="og:type" content="article">
-<meta property="og:title" content="TDD-XCTest入门篇">
-<meta property="og:url" content="http://yoursite.com/2016/11/23/TDD-XCTest入门篇/index.html">
+<meta property="og:title" content="iOS事件传递分析">
+<meta property="og:url" content="http://yoursite.com/2016/12/20/iOS事件传递分析/index.html">
 <meta property="og:site_name" content="陌洛凉">
-<meta property="og:description" content="它是什么TDD测试驱动开发，全称为Test Driven Development。XCode自带的单元测试工具
-它有什么好处
-测试为了线上少出错，发现bug及时修改
-不必每次改完一个很小的问题就的重新跑一遍程序
-测试为了更好地优化自己代码结构逻辑
+<meta property="og:description" content="一个事件总是沿着明确的路径传输直到它被分发给一个对象可以处理它。首先UIApplication的单例从事件处理队列的头部拿到，并为了处理开始分配。一般，它将事件分配给UIAppldelegate的keyWindow对象，由这个对象传递给一个已经初始过的的对象处理它。  
 
-我怎么用它XCT基础配置XCTestCase是XCTest的具体的子类，开发者可以通过重写此类来测试自己的工程。一个测试类可以有多个测试方法，并且对于">
-<meta property="og:updated_time" content="2016-11-24T14:53:00.000Z">
+触摸事件 对于触摸事件来说，window对象首先尝试将事件分发给产生这个事件的视图，这个视图被称为hit-testview，寻">
+<meta property="og:updated_time" content="2016-12-20T16:00:42.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TDD-XCTest入门篇">
-<meta name="twitter:description" content="它是什么TDD测试驱动开发，全称为Test Driven Development。XCode自带的单元测试工具
-它有什么好处
-测试为了线上少出错，发现bug及时修改
-不必每次改完一个很小的问题就的重新跑一遍程序
-测试为了更好地优化自己代码结构逻辑
+<meta name="twitter:title" content="iOS事件传递分析">
+<meta name="twitter:description" content="一个事件总是沿着明确的路径传输直到它被分发给一个对象可以处理它。首先UIApplication的单例从事件处理队列的头部拿到，并为了处理开始分配。一般，它将事件分配给UIAppldelegate的keyWindow对象，由这个对象传递给一个已经初始过的的对象处理它。  
 
-我怎么用它XCT基础配置XCTestCase是XCTest的具体的子类，开发者可以通过重写此类来测试自己的工程。一个测试类可以有多个测试方法，并且对于">
+触摸事件 对于触摸事件来说，window对象首先尝试将事件分发给产生这个事件的视图，这个视图被称为hit-testview，寻">
 
 
 
@@ -132,9 +120,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/11/23/TDD-XCTest入门篇/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/12/20/iOS事件传递分析/"/>
 
-  <title> TDD-XCTest入门篇 | 陌洛凉 </title>
+  <title> iOS事件传递分析 | 陌洛凉 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -254,7 +242,7 @@
             
             
               
-                TDD-XCTest入门篇
+                iOS事件传递分析
               
             
           </h1>
@@ -266,8 +254,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-23T22:21:45+08:00" content="2016-11-23">
-              2016-11-23
+            <time itemprop="dateCreated" datetime="2016-12-20T23:05:44+08:00" content="2016-12-20">
+              2016-12-20
             </time>
           </span>
 
@@ -294,39 +282,19 @@
       
 
       
-        <h2 id="它是什么"><a href="#它是什么" class="headerlink" title="它是什么"></a>它是什么</h2><p>TDD测试驱动开发，全称为Test Driven Development。XCode自带的单元测试工具</p>
-<h2 id="它有什么好处"><a href="#它有什么好处" class="headerlink" title="它有什么好处"></a>它有什么好处</h2><ul>
-<li>测试为了线上少出错，发现bug及时修改</li>
-<li>不必每次改完一个很小的问题就的重新跑一遍程序</li>
-<li>测试为了更好地优化自己代码结构逻辑</li>
-</ul>
-<h2 id="我怎么用它"><a href="#我怎么用它" class="headerlink" title="我怎么用它"></a>我怎么用它</h2><h3 id="XCT基础配置"><a href="#XCT基础配置" class="headerlink" title="XCT基础配置"></a>XCT基础配置</h3><p><code>XCTestCase</code>是<code>XCTest</code>的具体的子类，开发者可以通过重写此类来测试自己的工程。一个测试类可以有多个测试方法，并且对于所有的测试方法支持创建和清空操作，类层面上的测试也一样。<br>如何定义一个测试类： </p>
+        <p>一个事件总是沿着明确的路径传输直到它被分发给一个对象可以处理它。首先<code>UIApplication</code>的单例从事件处理队列的头部拿到，并为了处理开始分配。一般，它将事件分配给<code>UIAppldelegate</code>的<code>keyWindow</code>对象，由这个对象传递给一个已经初始过的的对象处理它。  </p>
 <ul>
-<li>创建一个<code>XCTestCase</code>的子类，并且以<code>Tests</code>结尾  </li>
-<li>实现里面的<code>-test</code>方法</li>
-<li>可以定义多个储存当前测试状态的对象或者属性 （可选） </li>
-<li>通过初始化<code>-setUp</code>来初始化状态  (可选) </li>
-<li>通过重写<code>-tearDown</code>在测试完之后清除 (可选)   </li>
+<li><p>触摸事件 对于触摸事件来说，<code>window</code>对象首先尝试将事件分发给产生这个事件的视图，这个视图被称为<code>hit-test</code>view，寻找这个视图的过程就是<code>hit-testing</code>.</p>
+</li>
+<li><p>动作和远程控制事件 对于这些事件来说，视窗对象通常将这些事件传给第一个响应对象来处理。</p>
+</li>
 </ul>
-<p>测试方法是对象方法 遵守以下约定:  </p>
-<ul>
-<li>没有参数  </li>
-<li>没有返回值  </li>
-<li>以test作为方法名前缀</li>
-</ul>
-<h3 id="XCT基础使用"><a href="#XCT基础使用" class="headerlink" title="XCT基础使用"></a>XCT基础使用</h3><p>测试方法大多都是通过断言来判定是否正确。</p>
-<pre><code>func testExample() {
-
-     XCTAssert(f1 + f2 == 5.0, &quot;simple test example&quot;)
-
- }
-</code></pre><p>通过<code>command+R</code>或通过<code>Produnt-&gt; Test</code>来运行测试用例，将会得到以下结果，并且在测试方法的左侧将会有一个菱形标志（正确则显示为绿色，错误则显示为红色）。  </p>
-<p>在写测试用例的时候，应该考虑到代码的重用性，项目里面的测试用例都应该有一个共同的父类。父类可以写一些公用的辅助方法以及一些属性。<br>测试方法命名采用<code>test+要测试的方法和类名</code>，这样可以很明确地看出来测试用例的目的。每一个测试用例类都应该对应一个项目工程实际代码类，通常采用<code>类名+Tests</code>命名。禁用一个测试用例的话，只需在方法名之前添加<code>DISABLED</code>。</p>
+<h2 id="Hit-Testing"><a href="#Hit-Testing" class="headerlink" title="Hit-Testing"></a>Hit-Testing</h2><h3 id="在父视图之内"><a href="#在父视图之内" class="headerlink" title="在父视图之内"></a>在父视图之内</h3><p><code>Hit-Testing</code>是一个过程，结果就是返回处理事件的<code>hit-test</code>view。寻找的顺序就是从这个触摸点所在的最高层的<code>superView</code>开始，依次遍历其<code>subViews</code>，看其是否包含这个<code>touch</code>,不包含则跳过，如果包含，那就遍历当前这个子视图的<code>subViews</code>， 就这样一直找到包含此<code>touch</code>的最低级的视图（没有子视图了），那么它就是<code>hit-test</code>view了。<br>这是主要使用<code>hitTest:withEvent:</code>方法返回响应事件的视图，<code>hitTest:withEvent:</code>在被调用开始时在其方法内部调用<code>pointInside:withEvent:</code>方法，如果从<code>hitTest:withEvent:</code>传过来的坐标在这个视图内，那么<code>pointInside:withEvent:</code>将返回<code>YES</code>，然后自己的<code>retrun YES</code>的子视图继续递归调用<code>hitTest:withEvent:</code>。<br>如果坐标点不在视图范围内，首次调用<code>pointInside:withEvent:</code>（也就是最高层父视图调用）就返回<code>NO</code>，这个点就被忽略，<code>hitTest:withEvent:</code>则返回<code>nil</code>。如果父视图的一个子视图返回<code>nil</code>，那么这个子视图上面所有的视图都会忽略。不在这个子视图上，那么就不会在这个子视图的子视图上。这样就意味着任何视图的点如果在其父视图的外部，那么这些点上的事件就不会被接收。</p>
+<h3 id="在父视图之外"><a href="#在父视图之外" class="headerlink" title="在父视图之外"></a>在父视图之外</h3><p>在父视图之外的子视图上的事件如果想被接收，需要重写<code>hitTest:withEvent:</code>方法。<br><figure class="highlight plain"><figcaption><span>-C</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">   </div><div class="line">- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event &#123;</div><div class="line"></div><div class="line">    // 1. 在target视图坐标系统内换算坐标</div><div class="line">    </div><div class="line">    CGPoint pointForTargetView = [self.targetView convertPoint:point fromView:self];</div><div class="line">    </div><div class="line">    // 2. 接收事件的点在targetView内</div><div class="line">    </div><div class="line">    if (CGRectContainsPoint(self.targetView.bounds, pointForTargetView)) &#123;</div><div class="line">        </div><div class="line">        // 3. 在TargetView内进行事件分发</div><div class="line">        return [self.targetView hitTest:pointForTargetView withEvent:event];</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    return [super hitTest:point withEvent:event];</div><div class="line">&#125;</div><div class="line"></div></pre></td></tr></table></figure></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">  <span class="keyword">override</span> <span class="function"><span class="keyword">func</span> <span class="title">hitTest</span><span class="params">(<span class="number">_</span> point: CGPoint, with event: UIEvent?)</span></span> -&gt; <span class="type">UIView</span>? &#123;</div><div class="line">    </div><div class="line">    <span class="keyword">let</span> pointForTargetView = <span class="keyword">self</span>.targetView.convert(point, from: <span class="keyword">self</span>)</div><div class="line">    </div><div class="line">    <span class="keyword">if</span> <span class="keyword">self</span>.targetView.bounds.<span class="built_in">contains</span>(pointForTargetView) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">self</span>.targetView.hitTest(pointForTargetView, with: event)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="keyword">return</span> <span class="keyword">super</span>.hitTest(point, with: event)</div><div class="line">&#125;</div><div class="line"></div></pre></td></tr></table></figure>  
 <blockquote>
-<p>这里其实只要方法不是以<code>test</code>开头，XCTest就会在运行时跳过这个方法   </p>
+<p><code>hit-test</code>View拥有第一优先权响应事件，如果不能响应，那么继续在响应链中分发处理。</p>
 </blockquote>
-<p>正在尝试怎么结合实际项目提升开发效率，有了进展在更新。 </p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p> <a href="http://yulingtianxia.com/blog/2014/04/28/iosdan-yuan-ce-shi-xctest/" target="_blank" rel="external">玉令天下的博客</a><br> <a href="https://objccn.io/issue-15-2/" target="_blank" rel="external">XCTest测试实战</a><br> <a href="https://objccn.io/issue-1-3/" target="_blank" rel="external">测试ViewController</a></p>
 
       
     </div>
@@ -347,28 +315,18 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/XCTest-TDD/" rel="tag">#XCTest TDD</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/09/Effective Objective-C 笔记/" rel="next" title="Effective Objective-C 笔记">
-                <i class="fa fa-chevron-left"></i> Effective Objective-C 笔记
+              <a href="/2016/12/04/记徽杭古道之行/" rel="next" title="记徽杭古道之行">
+                <i class="fa fa-chevron-left"></i> 记徽杭古道之行
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/01/在Swift中使用JSON/" rel="prev" title="在Swift中使用JSON">
-                在Swift中使用JSON <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -495,7 +453,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#它是什么"><span class="nav-number">1.</span> <span class="nav-text">它是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#它有什么好处"><span class="nav-number">2.</span> <span class="nav-text">它有什么好处</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#我怎么用它"><span class="nav-number">3.</span> <span class="nav-text">我怎么用它</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#XCT基础配置"><span class="nav-number">3.1.</span> <span class="nav-text">XCT基础配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#XCT基础使用"><span class="nav-number">3.2.</span> <span class="nav-text">XCT基础使用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hit-Testing"><span class="nav-number">1.</span> <span class="nav-text">Hit-Testing</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在父视图之内"><span class="nav-number">1.1.</span> <span class="nav-text">在父视图之内</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在父视图之外"><span class="nav-number">1.2.</span> <span class="nav-text">在父视图之外</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
