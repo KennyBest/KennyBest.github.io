@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="iOS开发," />
 
 
 
@@ -94,12 +94,14 @@
 <meta property="og:description" content="一个事件总是沿着明确的路径传输直到它被分发给一个对象可以处理它。首先UIApplication的单例从事件处理队列的头部拿到，并为了处理开始分配。一般，它将事件分配给UIAppldelegate的keyWindow对象，由这个对象传递给一个已经初始过的的对象处理它。  
 
 触摸事件 对于触摸事件来说，window对象首先尝试将事件分发给产生这个事件的视图，这个视图被称为hit-testview，寻">
-<meta property="og:updated_time" content="2016-12-20T16:07:41.000Z">
+<meta property="og:image" content="http://yoursite.com/2016/12/20/iOS事件传递分析/iOS_responder_chain.png">
+<meta property="og:updated_time" content="2016-12-25T15:17:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS事件传递分析">
 <meta name="twitter:description" content="一个事件总是沿着明确的路径传输直到它被分发给一个对象可以处理它。首先UIApplication的单例从事件处理队列的头部拿到，并为了处理开始分配。一般，它将事件分配给UIAppldelegate的keyWindow对象，由这个对象传递给一个已经初始过的的对象处理它。  
 
 触摸事件 对于触摸事件来说，window对象首先尝试将事件分发给产生这个事件的视图，这个视图被称为hit-testview，寻">
+<meta name="twitter:image" content="http://yoursite.com/2016/12/20/iOS事件传递分析/iOS_responder_chain.png">
 
 
 
@@ -295,6 +297,20 @@
 <blockquote>
 <p><code>hit-test</code>View拥有第一优先权响应事件，如果不能响应，那么继续在响应链中分发处理。</p>
 </blockquote>
+<h2 id="响应链"><a href="#响应链" class="headerlink" title="响应链"></a>响应链</h2><p>大部分事件都需要依赖响应链来分发。响应链由一系列的响应体组成，从第一个响应体到最后的<code>UIApplication</code>对象。如果第一个响应体不能响应，那么沿着响应链依次传递下去。  </p>
+<p><code>UIResponder</code>是所有可响应对象的基类，可以响应并处理事件。<code>UIApplication UIViewController UIView</code>的对象都是响应体，<code>Core Aniamtion Layer</code>不是响应体。<br>第一响应体被定位为第一个接受事件，一般来说，第一响应体通常是一个<code>UIView</code>对象。一个对象成为第一响应体需要实现： </p>
+<ul>
+<li>重写<code>canBecomeFirestResponder</code>方法，并返回<code>YES</code>   </li>
+<li>接收<code>becomeFirstResponder</code>消息。<strong>如果必要，一个对象可以发送自己的这条消息</strong>  </li>
+</ul>
+<blockquote>
+<p>第一响应体也要先定义再使用</p>
+</blockquote>
+<img src="/2016/12/20/iOS事件传递分析/iOS_responder_chain.png" alt="响应链传递" title="响应链传递">  
+<p>这两种传递方式都是从一个<code>UIView</code>对象开始到<code>UIApplication</code>对象结束，都是视图层级里面由低到高进行传递。区别点就是当一个UIViewController对象A作为childViewController被另外一个UIViewController对象B管理时，如果A中view属性对象不能处理事件时，它会将事件先返回给B，由B中视图继续传递。</p>
+<blockquote>
+<p>当自定义视图去处理事件时，不要直接将事件或者消息通过<code>nextResponder</code>在传递链中传递，调用父类的当前处理事件方法实现，让UIKit替你自动处理响应链的遍历。</p>
+</blockquote>
 
       
     </div>
@@ -314,6 +330,12 @@
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/iOS开发/" rel="tag">#iOS开发</a>
+          
+        </div>
       
 
       
@@ -404,7 +426,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -453,7 +475,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hit-Testing"><span class="nav-number">1.</span> <span class="nav-text">Hit-Testing</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在父视图之内"><span class="nav-number">1.1.</span> <span class="nav-text">在父视图之内</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在父视图之外"><span class="nav-number">1.2.</span> <span class="nav-text">在父视图之外</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hit-Testing"><span class="nav-number">1.</span> <span class="nav-text">Hit-Testing</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在父视图之内"><span class="nav-number">1.1.</span> <span class="nav-text">在父视图之内</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在父视图之外"><span class="nav-number">1.2.</span> <span class="nav-text">在父视图之外</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#响应链"><span class="nav-number">2.</span> <span class="nav-text">响应链</span></a></li></ol></div>
             
           </div>
         </section>
