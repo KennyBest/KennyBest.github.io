@@ -95,7 +95,7 @@
 
 触摸事件 对于触摸事件来说，window对象首先尝试将事件分发给产生这个事件的视图，这个视图被称为hit-testview，寻">
 <meta property="og:image" content="http://yoursite.com/2016/12/20/iOS事件传递分析/iOS_responder_chain.png">
-<meta property="og:updated_time" content="2016-12-25T15:17:20.000Z">
+<meta property="og:updated_time" content="2016-12-25T15:21:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS事件传递分析">
 <meta name="twitter:description" content="一个事件总是沿着明确的路径传输直到它被分发给一个对象可以处理它。首先UIApplication的单例从事件处理队列的头部拿到，并为了处理开始分配。一般，它将事件分配给UIAppldelegate的keyWindow对象，由这个对象传递给一个已经初始过的的对象处理它。  
@@ -306,7 +306,7 @@
 <blockquote>
 <p>第一响应体也要先定义再使用</p>
 </blockquote>
-<img src="/2016/12/20/iOS事件传递分析/iOS_responder_chain.png" alt="响应链传递" title="响应链传递">  
+<img src="/2016/12/20/iOS事件传递分析/iOS_responder_chain.png" alt="响应链传递(图取自苹果文档)" title="响应链传递(图取自苹果文档)">  
 <p>这两种传递方式都是从一个<code>UIView</code>对象开始到<code>UIApplication</code>对象结束，都是视图层级里面由低到高进行传递。区别点就是当一个UIViewController对象A作为childViewController被另外一个UIViewController对象B管理时，如果A中view属性对象不能处理事件时，它会将事件先返回给B，由B中视图继续传递。</p>
 <blockquote>
 <p>当自定义视图去处理事件时，不要直接将事件或者消息通过<code>nextResponder</code>在传递链中传递，调用父类的当前处理事件方法实现，让UIKit替你自动处理响应链的遍历。</p>
