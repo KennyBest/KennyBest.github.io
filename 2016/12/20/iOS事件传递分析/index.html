@@ -95,7 +95,7 @@
 
 触摸事件 对于触摸事件来说，window对象首先尝试将事件分发给产生这个事件的视图，这个视图被称为hit-testview，寻">
 <meta property="og:image" content="http://yoursite.com/2016/12/20/iOS事件传递分析/iOS_responder_chain.png">
-<meta property="og:updated_time" content="2016-12-29T13:00:36.000Z">
+<meta property="og:updated_time" content="2016-12-29T13:03:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS事件传递分析">
 <meta name="twitter:description" content="一个事件总是沿着明确的路径传输直到它被分发给一个对象可以处理它。首先UIApplication的单例从事件处理队列的头部拿到，并为了处理开始分配。一般，它将事件分配给UIAppldelegate的keyWindow对象，由这个对象传递给一个已经初始过的的对象处理它。  
@@ -330,7 +330,7 @@
 override func motionCancelled(_ motion: UIEventSubtype, with event: UIEvent?) {
     print(&quot;shake motion cancel&quot;)
 }
-</code></pre><p>```  </p>
+</code></pre><p>  ```  </p>
 <h3 id="设置和请求硬件能力"><a href="#设置和请求硬件能力" class="headerlink" title="设置和请求硬件能力"></a>设置和请求硬件能力</h3><p>在<code>info.plist</code>中设置 加速计accelerometer 陀螺仪gyroscope  </p>
 <ol>
 <li>在<code>Required device capabilities</code>对应的数组中添加</li>
