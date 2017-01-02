@@ -98,7 +98,7 @@
 1navigationItem.prompt = &quot;Test next viewController&apos;s prompt&quot;
 
 这里官方指出使用这个属性时在iOS7中会有一个bug（在iOS8中修复），如果在viewDidAppear之前设置会导致t">
-<meta property="og:updated_time" content="2017-01-02T15:21:26.000Z">
+<meta property="og:updated_time" content="2017-01-02T15:25:13.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="UINavigationBar有意思的用法">
 <meta name="twitter:description" content="今天在看iOS guide，突然发现了一些有意思的用法，特此记录一下。  
@@ -305,7 +305,7 @@
 </ul>
 <h2 id="导航栏返回按钮"><a href="#导航栏返回按钮" class="headerlink" title="导航栏返回按钮"></a>导航栏返回按钮</h2><ul>
 <li><p>创建一个不可拉伸的图片</p>
-  <figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 此时设置的导航栏的tintColor属性不会影响这个图片，这个图片显示自身颜色</span></div><div class="line"><span class="keyword">var</span> image = <span class="type">UIImage</span>(named: <span class="string">"Menu"</span>)</div><div class="line">  <span class="comment">// 固定左侧 且不可拉伸</span></div><div class="line">  image = image!.resizableImage(withCapInsets: .<span class="keyword">init</span>(top: <span class="number">0</span>, <span class="keyword">left</span>: image!.size.width - <span class="number">1</span>, bottom: <span class="number">0</span>, <span class="keyword">right</span>: <span class="number">0</span>))</div><div class="line">   </div><div class="line">	</div></pre></td></tr></table></figure>   
+  <figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 此时设置的导航栏的tintColor属性不会影响这个图片，这个图片显示自身颜色</span></div><div class="line"><span class="keyword">var</span> image = <span class="type">UIImage</span>(named: <span class="string">"Menu"</span>)</div><div class="line">  <span class="comment">// 固定左侧 且不可拉伸</span></div><div class="line">  image = image!.resizableImage(withCapInsets: .<span class="keyword">init</span>(top: <span class="number">0</span>, <span class="keyword">left</span>: image!.size.width - <span class="number">1</span>, bottom: <span class="number">0</span>, <span class="keyword">right</span>: <span class="number">0</span>)) </div><div class="line">	</div></pre></td></tr></table></figure>   
 </li>
 </ul>
 <ul>
